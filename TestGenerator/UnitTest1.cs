@@ -23,7 +23,7 @@ namespace TestGenerator
         {
             bool flag = true;
             generator_chast_slov g2 = new generator_chast_slov("../../../tab/ch_1_slovo.txt");
-            if (g2.ver[31] != 442198 || g2.ver[92] != 160363 || g2.words[6] != "я" || g2.words[64] != "себя")
+            if (g2.ver[31] != 442198 || g2.ver[92] != 160363 || g2.words[6] != "СЏ" || g2.words[64] != "СЃРµР±СЏ")
                 flag = false;
             Assert.IsTrue(flag == true);
         }
@@ -32,7 +32,7 @@ namespace TestGenerator
         {
             bool flag = true;
             generator_chast_par g3 = new generator_chast_par("../../../tab/ch_2_slovo.txt");
-            if (g3.ver[23] != 67202 || g3.ver[59] != 40259 || g3.words[17, 0]!="и" || g3.words[96, 1] != "образом")
+            if (g3.ver[23] != 67202 || g3.ver[59] != 40259 || g3.words[17, 0]!="Рё" || g3.words[96, 1] != "РѕР±СЂР°Р·РѕРј")
                 flag = false;
             Assert.IsTrue(flag == true);
         }
